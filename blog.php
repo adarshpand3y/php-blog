@@ -20,6 +20,8 @@
         $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         $slug = basename(parse_url($url, PHP_URL_PATH));
         include_once "./utils/fetchblogbyslug.php";
+        include_once "./components/addcomment.php";
+        include_once "./components/displaycomments.php";
         ?>
     </div>
 
